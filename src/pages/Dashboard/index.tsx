@@ -79,8 +79,8 @@ const Dashboard: React.FC = () => {
           key={repository.full_name} 
           to={`/repositories/${repository.full_name}`}>
             <img 
-            src="https://avatars.githubusercontent.com/u/55491606?v=4"
-            alt="João Marcos"/>
+            src={repository.owner.avatar_url}
+            alt={repository.owner.login}/>
             <div>
               <strong>{repository.full_name}</strong>
               <p>{repository.description}</p>
